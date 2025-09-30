@@ -1,0 +1,87 @@
+/* 2. Estilo para o corpo da página (body) */
+body {
+    /* Mude a cor de fundo */
+    background-color: #f4f7f9; /* Um cinza claro suave */
+    
+    /* Centralize o conteúdo do cartão na página */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    min-height: 100vh;      /* Garante que o corpo ocupe toda a altura da viewport */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 3. Estilize o elemento Cartão */
+.cartao {
+    /* Defina uma largura razoável */
+    width: 320px;
+    /* Altura será ajustada automaticamente pelo conteúdo (min-height é opcional) */
+    /* min-height: 450px; */ 
+
+    background-color: #ffffff;
+    
+    /* Aplique uma borda suave (usando box-shadow) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    /* Defina um preenchimento interno */
+    padding: 30px;
+    
+    /* Centralize o texto dentro do cartão */
+    text-align: center;
+    
+    /* Arredonde os cantos */
+    border-radius: 15px;
+}
+
+/* Estilo para a imagem */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Faz a imagem ser um círculo */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    margin-bottom: 20px;
+    border: 4px solid #007bff; /* Borda colorida para destaque */
+}
+
+/* 4. Estilize os demais elementos (título, parágrafo, lista) */
+h1 {
+    color: #333333; /* Cor escura para o nome */
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.profissao {
+    color: #6c757d; /* Cor cinza para a descrição */
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #007bff; /* Cor primária para o subtítulo */
+    font-size: 1.2em;
+    margin-top: 20px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #dd9d13; /* Fundo levemente cinza para cada item */
+    color: #495057;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+li:hover {
+    background-color: #ced4da; /* Efeito de hover */
+}
